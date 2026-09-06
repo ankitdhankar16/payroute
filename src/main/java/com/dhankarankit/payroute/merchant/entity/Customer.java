@@ -25,7 +25,6 @@ public class Customer {
     @Column(length = 20)
     private String contactNumber;
 
-
     private LocalDateTime deletedAt;
 
 }
