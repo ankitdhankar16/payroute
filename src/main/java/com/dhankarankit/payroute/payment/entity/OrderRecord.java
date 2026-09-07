@@ -3,7 +3,6 @@ package com.dhankarankit.payroute.payment.entity;
 import com.dhankarankit.payroute.common.entity.Money;
 import com.dhankarankit.payroute.common.enums.OrderStatus;
 import jakarta.persistence.*;
-import org.apache.tomcat.util.json.JSONFilter;
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 
@@ -38,7 +37,5 @@ public class OrderRecord {
 
     @Column(nullable = false)
     private LocalDateTime expiresAt;
-
-
 
 }
