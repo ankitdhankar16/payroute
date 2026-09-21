@@ -22,14 +22,14 @@ public class Refund {
     @JoinColumn(name="payment_id",nullable = false)
     private Payment payment;
 
-    @JoinColumn(nullable = false)
+    @Column(nullable = false)
     private UUID merchantId;
 
     @Embedded
     private Money amount;
 
     @Enumerated(EnumType.STRING)
-    @JoinColumn(nullable = false)
+    @Column(nullable = false)
     private RefundStatus status=RefundStatus.PENDING;
 
     @Column(length = 100)
